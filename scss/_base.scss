@@ -1,0 +1,51 @@
+$bp-large: 78.15em; // 1250px
+$bp-medium: 61.25em; // 980px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+$border-radius: 1.5rem;
+
+$blur: blur(10px);
+
+$box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+
+$color-gradient-1: #ffb357;
+$color-gradient-2: #ff725b;
+$color-gradient-card-light-1: rgb(255, 255, 255, 0.3);
+$color-gradient-card-light-2: rgba(255, 255, 255, 0.3);
+
+$color-border-light: rgba(255, 255, 255, 0.4);
+$color-border-dark: #616161;
+
+$gradient-theme: linear-gradient(
+  to top right,
+  $color-gradient-1,
+  $color-gradient-2
+);
+$gradient-card: linear-gradient(
+  144deg,
+  $color-gradient-card-light-1,
+  $color-gradient-card-light-2
+);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 24px;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 20px;
+  }
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: $gradient-theme;
+}

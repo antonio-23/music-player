@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/components/_card.scss","../scss/_variables.scss"],"names":[],"mappings":"AAAA;EACE,YCDQ;;ADER;EACE","file":"index.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/_base.scss","../scss/components/_card.scss"],"names":[],"mappings":"AA8BA;EACE;EACA;;;AAGF;EACE;EACA;;AAEA;EAJF;IAKI;;;;AAIJ;EACE;EACA;EACA;EACA;EACA,YA9Be;;;ACnBjB;EACE;EACA;EACA;EACA;EACA;EACA;EAEA;EACA,eDJc;ECKd;EACA,YDac;ECZd,iBDLK","file":"index.css"}
