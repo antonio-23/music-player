@@ -4,28 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Music Player SCSS</title>
   </head>
   <body>
     <main>
-      <div class="card__body">
-        <div class="card__album"></div>
+        <div class="card__body">
+        <div class="card__album">
+          <img src="assets/album1.jpg" alt="album photo" />
+        </div>
 
         <div class="card__name">
-          <span>Shake It On • Jamiroquai</span>
-          <span>❤️</span>
+          <span>Dynamite • Jamiroquai</span>
         </div>
 
-        <div class="card__slider--full">
-          <div class="card__slider--progress"></div>
+        <div class="card__progress">
+          <div class="card__progress--area">
+            <div class="card__progress--bar">
+            </div>
+          </div>
+
+          <div class="card__progress--timer">
+            <span class="card__progress--time">1:49</span>
+            <span class="card__progress--duration">4:55</span>
+          </div>
         </div>
 
-        <div class="card__buttons">
-          <span>⏪</span>
-          <span>⏸️</span>
-          <span>⏭️</span>
+        <div class="card__controls">
+          <i class="material-icons repeat">repeat</i>
+          <div class="controls">
+            <i class="material-icons fast_rewind">fast_rewind</i>
+            <i class="material-icons pause_circle">pause_circle</i>
+            <i class="material-icons fast_forward">fast_forward</i>
+          </div>
+          <i class="material-icons favorite">favorite</i>
         </div>
       </div>
     </main>
+
+    <script src="index.js"/></script>
   </body>
 </html>

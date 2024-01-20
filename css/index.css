@@ -1,19 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   box-sizing: border-box;
   font-size: 24px;
-}
-@media only screen and (max-width: 61.25em) {
-  html {
-    font-size: 20px;
-  }
+  font-family: Lato;
 }
 
-main {
+body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,15 +27,118 @@ main {
 .card__body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 25rem;
-  height: 30rem;
+  width: 26rem;
+  height: 29rem;
+  padding: 2rem;
   background-color: white;
   border-radius: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  background: linear-gradient(144deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
+}
+@media screen and (max-width: 61.25em) {
+  .card__body {
+    font-size: 22px;
+    width: 23rem;
+    height: 26rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .card__body {
+    font-size: 20px;
+    width: 20rem;
+    height: 23rem;
+  }
+}
+@media screen and (max-width: 31.25em) {
+  .card__body {
+    font-size: 18px;
+    width: 17rem;
+    height: 20rem;
+  }
+}
+
+.card__album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+.card__album img {
+  width: 65%;
+  object-fit: cover;
+  box-shadow: 0px 10px 50px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 1.5rem;
+}
+.card__album:hover {
+  transform: scale(1.1);
+}
+
+.card__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.card__name span {
+  font-size: 1.1rem;
+}
+
+.card__progress--area {
+  height: 10px;
+  width: 100%;
+  background-color: #ccc;
+  border-radius: 1.5rem;
+  box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card__progress--bar {
+  height: 100%;
+  width: 25%;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 1.5rem 0 0 1.5rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+  transition: width 0.5s ease-in-out;
+}
+
+.card__progress--timer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.3rem;
+}
+.card__progress--timer span {
+  font-size: 0.7rem;
+}
+
+.figures {
+  position: absolute;
+}
+
+.card__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+.card__controls .material-icons {
+  opacity: 0.7;
+}
+.card__controls .repeat,
+.card__controls .favorite {
+  font-size: 1.2rem;
+}
+.card__controls .controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.card__controls .controls i {
+  font-size: 2rem;
+}
+.card__controls .controls .pause_circle {
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=index.css.map */

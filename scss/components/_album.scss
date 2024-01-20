@@ -1,0 +1,28 @@
+.card__album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+
+  img {
+    width: 65%;
+    object-fit: cover;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.card__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  span {
+    font-size: 1.1rem;
+  }
+}

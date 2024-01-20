@@ -1,14 +1,31 @@
 .card__body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 25rem;
-  height: 30rem;
+  width: 26rem;
+  height: 29rem;
+  padding: 2rem;
 
   background-color: white;
   border-radius: $border-radius;
   border: 1px solid $color-border-light;
   background: $gradient-card;
   backdrop-filter: $blur;
+
+  @media screen and (max-width: $bp-medium) {
+    font-size: 22px;
+    width: 23rem;
+    height: 26rem;
+  }
+
+  @media screen and (max-width: $bp-small) {
+    font-size: 20px;
+    width: 20rem;
+    height: 23rem;
+  }
+
+  @media screen and (max-width: $bp-smallest) {
+    font-size: 18px;
+    width: 17rem;
+    height: 20rem;
+  }
 }

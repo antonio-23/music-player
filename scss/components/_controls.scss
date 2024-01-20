@@ -1,0 +1,31 @@
+.card__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  cursor: pointer;
+
+  .material-icons {
+    opacity: 0.7;
+  }
+
+  .repeat,
+  .favorite {
+    font-size: 1.2rem;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    i {
+      font-size: 2rem;
+    }
+
+    .pause_circle {
+      font-size: 3rem;
+    }
+  }
+}
