@@ -2,17 +2,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease-in-out;
 
   img {
     width: 65%;
     object-fit: cover;
     box-shadow: $box-shadow;
     border-radius: $border-radius;
-  }
+    transition: transform 0.3s ease-in-out;
 
-  &:hover {
-    transform: scale(1.1);
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 

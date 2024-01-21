@@ -22,25 +22,26 @@ body {
   justify-content: center;
   min-height: 100vh;
   background: linear-gradient(to top right, #ffb357, #ff725b);
+  color: #fff;
 }
 
 .card__body {
   display: flex;
   flex-direction: column;
-  width: 26rem;
-  height: 29rem;
+  width: 24rem;
+  height: 27rem;
   padding: 2rem;
   background-color: white;
   border-radius: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(97, 97, 97, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
 }
 @media screen and (max-width: 61.25em) {
   .card__body {
     font-size: 22px;
-    width: 23rem;
-    height: 26rem;
+    width: 22rem;
+    height: 25rem;
   }
 }
 @media screen and (max-width: 37.5em) {
@@ -58,19 +59,23 @@ body {
   }
 }
 
+.card__body--switch {
+  position: absolute;
+}
+
 .card__album {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease-in-out;
 }
 .card__album img {
   width: 65%;
   object-fit: cover;
   box-shadow: 0px 10px 50px 5px rgba(0, 0, 0, 0.4);
   border-radius: 1.5rem;
+  transition: transform 0.3s ease-in-out;
 }
-.card__album:hover {
+.card__album img:hover {
   transform: scale(1.1);
 }
 
@@ -87,7 +92,7 @@ body {
 .card__progress--area {
   height: 10px;
   width: 100%;
-  background-color: #ccc;
+  background-color: rgba(198, 198, 198, 0.8);
   border-radius: 1.5rem;
   box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
 }
@@ -122,11 +127,11 @@ body {
   cursor: pointer;
 }
 .card__controls .material-icons {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .card__controls .repeat,
 .card__controls .favorite {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .card__controls .controls {
   display: flex;
@@ -138,7 +143,7 @@ body {
   font-size: 2rem;
 }
 .card__controls .controls .pause_circle {
-  font-size: 3rem;
+  font-size: 3.3rem;
 }
 
 /*# sourceMappingURL=index.css.map */

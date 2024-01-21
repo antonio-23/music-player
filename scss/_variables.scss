@@ -11,20 +11,26 @@ $box-shadow: 0px 10px 50px 5px rgba(0, 0, 0, 0.4);
 
 $color-gradient-1: #ffb357;
 $color-gradient-2: #ff725b;
-$color-gradient-card-light-1: rgb(255, 255, 255, 0.3);
-$color-gradient-card-light-2: rgba(255, 255, 255, 0.3);
-$color-gradient-card-dark-1: rgba(0, 0, 0, 0.4);
-$color-gradient-card-dark-2: rgba(0, 0, 0, 0.3);
-
-$color-border-light: rgba(255, 255, 255, 0.4);
-$color-border-dark: #616161;
-
-$color-progress: #ccc;
-
+$color-progress-bar: rgba(255, 255, 255, 0.8);
 $gradient-theme: linear-gradient(
   to top right,
   $color-gradient-1,
   $color-gradient-2
 );
 
-$gradient-card: $color-gradient-card-light-1;
+// LIGHT THEME
+$text-color-light: #000;
+$color-gradient-card-light-1: rgb(255, 255, 255, 0.3);
+$color-border-light: rgba(255, 255, 255, 0.4);
+$color-progress-area-light: rgba(204, 204, 204, 0.8);
+
+// DARK THEME
+$text-color-dark: #fff;
+$color-gradient-card-dark-1: rgba(0, 0, 0, 0.4);
+$color-border-dark: rgba(97, 97, 97, 0.5);
+$color-progress-area-dark: rgba(198, 198, 198, 0.8);
+
+$gradient-card: $color-gradient-card-dark-1;
+$color-border: $color-border-dark;
+$color-progress-area: $color-progress-area-dark;
+$text-color: $text-color-dark;

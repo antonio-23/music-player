@@ -1,7 +1,7 @@
 .card__progress--area {
   height: 10px;
   width: 100%;
-  background-color: $color-progress;
+  background-color: $color-progress-area;
   border-radius: $border-radius;
   box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
 }
@@ -9,7 +9,7 @@
 .card__progress--bar {
   height: 100%;
   width: 25%;
-  background: rgba(255, 255, 255, 0.8);
+  background: $color-progress-bar;
   border-radius: $border-radius 0 0 $border-radius;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
   transition: width 0.5s ease-in-out;
