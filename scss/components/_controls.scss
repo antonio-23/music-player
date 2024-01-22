@@ -4,6 +4,7 @@
   align-items: center;
   margin: 1rem 0;
   cursor: pointer;
+  user-select: none;
 
   .material-icons {
     opacity: 0.8;
@@ -20,7 +21,7 @@
     align-items: center;
     gap: 1rem;
 
-    i {
+    span {
       font-size: 2rem;
     }
 

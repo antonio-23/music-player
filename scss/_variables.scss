@@ -20,17 +20,12 @@ $gradient-theme: linear-gradient(
 
 // LIGHT THEME
 $text-color-light: #000;
-$color-gradient-card-light-1: rgb(255, 255, 255, 0.3);
+$color-gradient-card-light: rgb(255, 255, 255, 0.3);
 $color-border-light: rgba(255, 255, 255, 0.4);
 $color-progress-area-light: rgba(204, 204, 204, 0.8);
 
 // DARK THEME
 $text-color-dark: #fff;
-$color-gradient-card-dark-1: rgba(0, 0, 0, 0.4);
+$color-gradient-card-dark: rgba(0, 0, 0, 0.4);
 $color-border-dark: rgba(97, 97, 97, 0.5);
-$color-progress-area-dark: rgba(198, 198, 198, 0.8);
-
-$gradient-card: $color-gradient-card-dark-1;
-$color-border: $color-border-dark;
-$color-progress-area: $color-progress-area-dark;
-$text-color: $text-color-dark;
+$color-progress-area-dark: rgba(210, 210, 210, 0.8);

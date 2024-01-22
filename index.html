@@ -9,10 +9,10 @@
   </head>
   <body>
     <main>
-        <div class="card__body">
-          <div class="card__body--switch">
-            <i class="material-icons">light_mode</i>
-            <i class="material-icons">dark_mode</i>
+        <div class="card__body--light">
+          <div class="card__body--switch" id="darkModeToggle">
+            <span class="material-icons light_mode hidden">light_mode</span>
+            <span class="material-icons dark_mode">dark_mode</span>
           </div>
 
         <div class="card__album">
@@ -24,7 +24,7 @@
         </div>
 
         <div class="card__progress">
-          <div class="card__progress--area">
+          <div class="card__progress--area-light">
             <div class="card__progress--bar">
             </div>
           </div>
@@ -36,13 +36,13 @@
         </div>
 
         <div class="card__controls">
-          <i class="material-icons repeat">repeat</i>
+          <span class="material-icons repeat">repeat</span>
           <div class="controls">
-            <i class="material-icons fast_rewind">fast_rewind</i>
-            <i class="material-icons pause_circle">pause_circle</i>
-            <i class="material-icons fast_forward">fast_forward</i>
+            <span class="material-icons fast_rewind">fast_rewind</span>
+            <span class="material-icons pause_circle">pause_circle</span>
+            <span class="material-icons fast_forward">fast_forward</span>
           </div>
-          <i class="material-icons favorite">favorite</i>
+          <span class="material-icons favorite">favorite</span>
         </div>
       </div>
     </main>

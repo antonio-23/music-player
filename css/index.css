@@ -22,37 +22,70 @@ body {
   justify-content: center;
   min-height: 100vh;
   background: linear-gradient(to top right, #ffb357, #ff725b);
-  color: #fff;
 }
 
-.card__body {
+.card__body--light {
   display: flex;
   flex-direction: column;
   width: 24rem;
   height: 27rem;
   padding: 2rem;
-  background-color: white;
   border-radius: 1.5rem;
-  border: 1px solid rgba(97, 97, 97, 0.5);
-  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
   backdrop-filter: blur(10px);
 }
 @media screen and (max-width: 61.25em) {
-  .card__body {
+  .card__body--light {
     font-size: 22px;
     width: 22rem;
     height: 25rem;
   }
 }
 @media screen and (max-width: 37.5em) {
-  .card__body {
+  .card__body--light {
     font-size: 20px;
     width: 20rem;
     height: 23rem;
   }
 }
 @media screen and (max-width: 31.25em) {
-  .card__body {
+  .card__body--light {
+    font-size: 18px;
+    width: 17rem;
+    height: 20rem;
+  }
+}
+
+.card__body--dark {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  height: 27rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(97, 97, 97, 0.5);
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+@media screen and (max-width: 61.25em) {
+  .card__body--dark {
+    font-size: 22px;
+    width: 22rem;
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .card__body--dark {
+    font-size: 20px;
+    width: 20rem;
+    height: 23rem;
+  }
+}
+@media screen and (max-width: 31.25em) {
+  .card__body--dark {
     font-size: 18px;
     width: 17rem;
     height: 20rem;
@@ -61,6 +94,14 @@ body {
 
 .card__body--switch {
   position: absolute;
+}
+.card__body--switch span {
+  opacity: 0.8;
+  cursor: pointer;
+  user-select: none;
+}
+.card__body--switch .hidden {
+  display: none;
 }
 
 .card__album {
@@ -89,12 +130,20 @@ body {
   font-size: 1.1rem;
 }
 
-.card__progress--area {
+.card__progress--area-light {
   height: 10px;
   width: 100%;
-  background-color: rgba(198, 198, 198, 0.8);
+  background-color: rgba(204, 204, 204, 0.8);
   border-radius: 1.5rem;
-  box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card__progress--area-dark {
+  height: 10px;
+  width: 100%;
+  background-color: rgba(210, 210, 210, 0.8);
+  border-radius: 1.5rem;
+  box-shadow: inset 0 3px 2px rgba(0, 0, 0, 0.3);
 }
 
 .card__progress--bar {
@@ -125,6 +174,7 @@ body {
   align-items: center;
   margin: 1rem 0;
   cursor: pointer;
+  user-select: none;
 }
 .card__controls .material-icons {
   opacity: 0.8;
@@ -139,7 +189,7 @@ body {
   align-items: center;
   gap: 1rem;
 }
-.card__controls .controls i {
+.card__controls .controls span {
   font-size: 2rem;
 }
 .card__controls .controls .pause_circle {

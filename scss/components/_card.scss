@@ -1,14 +1,14 @@
-.card__body {
+.card__body--light {
   display: flex;
   flex-direction: column;
   width: 24rem;
   height: 27rem;
   padding: 2rem;
 
-  background-color: white;
   border-radius: $border-radius;
-  border: 1px solid $color-border;
-  background: $gradient-card;
+  border: 1px solid $color-border-light;
+  background: $color-gradient-card-light;
+  color: $text-color-light;
   backdrop-filter: $blur;
 
   @media screen and (max-width: $bp-medium) {
@@ -29,6 +29,49 @@
     height: 20rem;
   }
 }
+
+.card__body--dark {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  height: 27rem;
+  padding: 2rem;
+
+  border-radius: $border-radius;
+  border: 1px solid $color-border-dark;
+  background: $color-gradient-card-dark;
+  color: $text-color-dark;
+  backdrop-filter: $blur;
+
+  @media screen and (max-width: $bp-medium) {
+    font-size: 22px;
+    width: 22rem;
+    height: 25rem;
+  }
+
+  @media screen and (max-width: $bp-small) {
+    font-size: 20px;
+    width: 20rem;
+    height: 23rem;
+  }
+
+  @media screen and (max-width: $bp-smallest) {
+    font-size: 18px;
+    width: 17rem;
+    height: 20rem;
+  }
+}
+
 .card__body--switch {
   position: absolute;
+
+  span {
+    opacity: 0.8;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .hidden {
+    display: none;
+  }
 }
