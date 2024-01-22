@@ -27,7 +27,9 @@ darkModeBtn.addEventListener("click", () => {
 favoriteBtn.addEventListener("click", () => {
   favorite.classList.toggle("hidden");
   favoriteOutline.classList.toggle("hidden");
+});
 
+favoriteOutline.addEventListener("click", () => {
   window.confetti({
     particleCount: 100,
     spread: 70,

@@ -9,23 +9,16 @@ $blur: blur(10px);
 
 $box-shadow: 0px 10px 50px 5px rgba(0, 0, 0, 0.4);
 
-$color-gradient-1: #ffb357;
-$color-gradient-2: #ff725b;
 $color-progress-bar: rgba(255, 255, 255, 0.8);
-$gradient-theme: linear-gradient(
-  to top right,
-  $color-gradient-1,
-  $color-gradient-2
-);
 
 // LIGHT THEME
 $text-color-light: #000;
-$color-gradient-card-light: rgb(255, 255, 255, 0.3);
-$color-border-light: rgba(255, 255, 255, 0.4);
-$color-progress-area-light: rgba(204, 204, 204, 0.8);
+$color-gradient-card-light: rgb(255, 255, 255, 0.5);
+$color-border-light: rgba(255, 255, 255, 0.5);
+$color-progress-area-light: rgb(190, 190, 190);
 
 // DARK THEME
 $text-color-dark: #fff;
-$color-gradient-card-dark: rgba(0, 0, 0, 0.4);
+$color-gradient-card-dark: rgba(0, 0, 0, 0.5);
 $color-border-dark: rgba(97, 97, 97, 0.5);
-$color-progress-area-dark: rgba(210, 210, 210, 0.8);
+$color-progress-area-dark: rgb(150, 150, 150);
