@@ -11,8 +11,15 @@
   }
 
   .repeat,
-  .favorite {
+  .favorite,
+  .favorite-outline {
     font-size: 1.3rem;
+  }
+
+  .favoriteBtn {
+    .hidden {
+      display: none;
+    }
   }
 
   .controls {

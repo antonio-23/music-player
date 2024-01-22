@@ -24,7 +24,8 @@ body {
   background: linear-gradient(to top right, #ffb357, #ff725b);
 }
 
-.card__body--light {
+.card__body--light,
+.card__body--dark {
   display: flex;
   flex-direction: column;
   width: 24rem;
@@ -35,61 +36,43 @@ body {
   background: rgba(255, 255, 255, 0.3);
   color: #000;
   backdrop-filter: blur(10px);
+  transition: all 0.5s ease;
 }
 @media screen and (max-width: 61.25em) {
-  .card__body--light {
+  .card__body--light,
+  .card__body--dark {
     font-size: 22px;
     width: 22rem;
     height: 25rem;
   }
 }
 @media screen and (max-width: 37.5em) {
-  .card__body--light {
+  .card__body--light,
+  .card__body--dark {
     font-size: 20px;
     width: 20rem;
     height: 23rem;
   }
 }
 @media screen and (max-width: 31.25em) {
-  .card__body--light {
+  .card__body--light,
+  .card__body--dark {
     font-size: 18px;
     width: 17rem;
     height: 20rem;
   }
 }
 
+.card__body--light {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+}
+
 .card__body--dark {
-  display: flex;
-  flex-direction: column;
-  width: 24rem;
-  height: 27rem;
-  padding: 2rem;
-  border-radius: 1.5rem;
   border: 1px solid rgba(97, 97, 97, 0.5);
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
-  backdrop-filter: blur(10px);
-}
-@media screen and (max-width: 61.25em) {
-  .card__body--dark {
-    font-size: 22px;
-    width: 22rem;
-    height: 25rem;
-  }
-}
-@media screen and (max-width: 37.5em) {
-  .card__body--dark {
-    font-size: 20px;
-    width: 20rem;
-    height: 23rem;
-  }
-}
-@media screen and (max-width: 31.25em) {
-  .card__body--dark {
-    font-size: 18px;
-    width: 17rem;
-    height: 20rem;
-  }
 }
 
 .card__body--switch {
@@ -180,8 +163,12 @@ body {
   opacity: 0.8;
 }
 .card__controls .repeat,
-.card__controls .favorite {
+.card__controls .favorite,
+.card__controls .favorite-outline {
   font-size: 1.3rem;
+}
+.card__controls .favoriteBtn .hidden {
+  display: none;
 }
 .card__controls .controls {
   display: flex;

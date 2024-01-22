@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
     <title>Music Player SCSS</title>
   </head>
   <body>
@@ -42,7 +43,10 @@
             <span class="material-icons pause_circle">pause_circle</span>
             <span class="material-icons fast_forward">fast_forward</span>
           </div>
-          <span class="material-icons favorite">favorite</span>
+          <div class="favoriteBtn">
+            <span class="material-icons favorite hidden">favorite</span>
+            <span class="material-icons favorite-outline">favorite_outline</span>
+          </div>
         </div>
       </div>
     </main>

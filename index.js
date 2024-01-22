@@ -3,6 +3,9 @@ const lightModeIcon = document.querySelector(".light_mode");
 const darkModeIcon = document.querySelector(".dark_mode");
 const cardBody = document.querySelector(".card__body--light");
 const cardProgress = document.querySelector(".card__progress--area-light");
+const favoriteBtn = document.querySelector(".favoriteBtn");
+const favoriteOutline = document.querySelector(".favorite-outline");
+const favorite = document.querySelector(".favorite");
 
 darkModeBtn.addEventListener("click", () => {
   lightModeIcon.classList.toggle("hidden");
@@ -19,4 +22,15 @@ darkModeBtn.addEventListener("click", () => {
     cardBody.classList.add("card__body--light");
     cardProgress.classList.add("card__progress--area-light");
   }
+});
+
+favoriteBtn.addEventListener("click", () => {
+  favorite.classList.toggle("hidden");
+  favoriteOutline.classList.toggle("hidden");
+
+  window.confetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { y: 0.7 },
+  });
 });

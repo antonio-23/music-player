@@ -1,4 +1,5 @@
-.card__body--light {
+.card__body--light,
+.card__body--dark {
   display: flex;
   flex-direction: column;
   width: 24rem;
@@ -10,6 +11,7 @@
   background: $color-gradient-card-light;
   color: $text-color-light;
   backdrop-filter: $blur;
+  transition: all 0.5s ease;
 
   @media screen and (max-width: $bp-medium) {
     font-size: 22px;
@@ -30,36 +32,16 @@
   }
 }
 
-.card__body--dark {
-  display: flex;
-  flex-direction: column;
-  width: 24rem;
-  height: 27rem;
-  padding: 2rem;
+.card__body--light {
+  border: 1px solid $color-border-light;
+  background: $color-gradient-card-light;
+  color: $text-color-light;
+}
 
-  border-radius: $border-radius;
+.card__body--dark {
   border: 1px solid $color-border-dark;
   background: $color-gradient-card-dark;
   color: $text-color-dark;
-  backdrop-filter: $blur;
-
-  @media screen and (max-width: $bp-medium) {
-    font-size: 22px;
-    width: 22rem;
-    height: 25rem;
-  }
-
-  @media screen and (max-width: $bp-small) {
-    font-size: 20px;
-    width: 20rem;
-    height: 23rem;
-  }
-
-  @media screen and (max-width: $bp-smallest) {
-    font-size: 18px;
-    width: 17rem;
-    height: 20rem;
-  }
 }
 
 .card__body--switch {
